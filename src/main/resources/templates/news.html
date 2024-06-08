@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacker News Titles</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Hacker News Titles</h1>
+        <ul class="list-group">
+            <li th:each="news : ${newsList}" class="list-group-item">
+                <span th:text="${news.title}"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
